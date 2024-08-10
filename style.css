@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    
+    background-color: antiquewhite;
+}
+.all-aitems{
+width: 100%;
+height: 100vh;
+display: grid;
+grid-template-columns: 4fr  1.25fr;
+grid-template-rows: 0.5fr 0.5fr  2fr  0.5fr  6fr;
+grid-template-areas: 
+"header-right header-left"
+"standard history"
+"calculater history"
+"memory-btn history"
+"keys history";
+}
+.header-right{
+    grid-template-areas: header-right;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+    font-size: larger;
+
+}
+.header-left{
+    grid-template-areas: header-left;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 5px;
+    font-size: larger;
+}
+.times:hover{
+    background-color: red;
+   
+}
+.minus:hover{
+    background-color: darkgray;
+ 
+    
+}
+.square:hover{
+    background-color: darkgray;
+    
+
+}
+.times, .minus, .square {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  text-align: center;
+  line-height: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.size-6{
+    width: 20px;
+    height: 20px;
+    justify-content: flex-start;
+    font-size: larger;
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    font-size: xx-large;
+}
+.standard{
+    grid-template-areas: header;
+    display: flex;
+    margin-left: 35px;
+    font-size: small;
+}
+.size-7{
+    width: 24px;
+    height: 28px;
+    margin-left: 10px;
+}
+.history{
+    grid-template-areas: history;
+    display: flex;
+    font-size: small;
+    gap: 20px;
+}
+.history-1{
+    border-bottom: 2px solid blueviolet;
+    display: inline-block;
+}
+.history-1:hover{
+    color: grey;
+    
+}
+.memory-1:hover{
+    color: gray;
+}
+.calculater{
+    grid-template-areas: calculater;
+    display: flex;
+    justify-content: flex-end;
+    font-size: xx-large;
+    align-items: flex-end;
+}
+.memory-btn{
+    display: flex;
+    gap: 64px;
+    justify-content: flex-start;
+    align-items: center; 
+    grid-area: memory-btn;
+    margin-left: 20px;
+}
+.memory-1 , .memory-2{
+    color: dimgray;
+}
+.keys{
+    grid-area: keys;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    border-radius: 10px;
+   
+}
+.dokme {
+    width: 100%;
+    height: 83px;
+    font-size: x-large;
+    background-color: #edafb8;
+}
+.dokme2{
+    width: 100%;
+    height: 83px;
+    font-size: x-large;
+    background-color: #f7e1d7;
+}
+.dokme:hover{
+    background-color: #dedbd2;
+}
+.dokme2:hover{
+    background-color: #dedbd2;
+}
