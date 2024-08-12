@@ -22,7 +22,7 @@ grid-template-areas:
 "keys history";
 }
 .header-right{
-    grid-template-areas: header-right;
+    grid-area: header-right;
     display: flex;
     justify-content: flex-start;
     margin: 5px;
@@ -30,7 +30,7 @@ grid-template-areas:
 
 }
 .header-left{
-    grid-template-areas: header-left;
+    grid-area: header-left;
     display: flex;
     justify-content: flex-end;
     gap: 15px;
@@ -70,7 +70,7 @@ grid-template-areas:
     font-size: xx-large;
 }
 .standard{
-    grid-template-areas: header;
+    grid-area: standard;
     display: flex;
     margin-left: 35px;
     font-size: small;
@@ -81,40 +81,37 @@ grid-template-areas:
     margin-left: 10px;
 }
 .history{
-    grid-template-areas: history;
+    grid-area: history;
     display: flex;
     font-size: small;
-    gap: 20px;
-}
-.history-1{
-    border-bottom: 2px solid blueviolet;
-    display: inline-block;
+    flex-direction: row;
+    gap: 30px;
+    
 }
 .history-1:hover{
     color: grey;
     
 }
 .memory-1:hover{
-    color: gray;
+    color: grey;
 }
 .calculater{
-    grid-template-areas: calculater;
+    grid-area: calculater;
     display: flex;
     justify-content: flex-end;
     font-size: xx-large;
     align-items: flex-end;
 }
 .memory-btn{
+    grid-area: memory-btn;
     display: flex;
     gap: 64px;
     justify-content: flex-start;
     align-items: center; 
-    grid-area: memory-btn;
     margin-left: 20px;
 }
-.memory-1 , .memory-2{
-    color: dimgray;
-}
+
+
 .keys{
     grid-area: keys;
     display: grid;
