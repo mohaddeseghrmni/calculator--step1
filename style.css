@@ -34,7 +34,6 @@ grid-template-areas:
     display: flex;
     justify-content: flex-end;
     gap: 15px;
-    margin: 5px;
     font-size: larger;
 }
 .times:hover{
@@ -69,6 +68,9 @@ grid-template-areas:
     left: 5px;
     font-size: xx-large;
 }
+.size-6:hover{
+    background-color: aliceblue;
+}
 .standard{
     grid-area: standard;
     display: flex;
@@ -81,20 +83,32 @@ grid-template-areas:
     margin-left: 10px;
 }
 .history{
+
     grid-area: history;
+    margin-top: 5px;
+
+}
+
+.left-text{
+    
     display: flex;
-    font-size: small;
-    flex-direction: row;
-    gap: 30px;
-    
+    gap: 15px;
 }
-.history-1:hover{
-    color: grey;
-    
+.his-btn:hover{
+    color: gray;
 }
-.memory-1:hover{
-    color: grey;
+.mem-btn:hover{
+    color: gray;
 }
+
+.his-btn{
+
+    border-bottom: 3px solid rgb(228, 137, 19);
+
+}
+
+  
+
 .calculater{
     grid-area: calculater;
     display: flex;
@@ -103,41 +117,88 @@ grid-template-areas:
     align-items: flex-end;
 }
 .memory-btn{
-    grid-area: memory-btn;
+
     display: flex;
-    gap: 64px;
-    justify-content: flex-start;
-    align-items: center; 
-    margin-left: 20px;
+    
 }
+
+.memory{
+
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 8%;
+    height: 45px;
+    width: max(50px,10%);
+}
+
+.memory-1{
+      
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    width: 8%;
+    height: 45px;
+    width: max(50px,10%);
+    color: rgb(167, 174, 175);
+
+}
+
+.memory:hover{
+
+    background-color:#D3D3D3; 
+    
+}
+
 
 
 .keys{
     grid-area: keys;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
     align-items: center;
     justify-content: center;
     min-width: 200px;
     border-radius: 10px;
    
 }
-.dokme {
+.sighn {
     width: 100%;
     height: 83px;
-    font-size: x-large;
+    font-size: large;
     background-color: #edafb8;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid;
 }
-.dokme2{
+.number{
     width: 100%;
     height: 83px;
-    font-size: x-large;
+    font-size:x-large ;
     background-color: #f7e1d7;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   border: 1px solid;
 }
-.dokme:hover{
+.sighn:hover{
     background-color: #dedbd2;
 }
-.dokme2:hover{
+.number:hover{
     background-color: #dedbd2;
+}
+.size-7{
+    width: 23px;
+    height: 30px;
 }
