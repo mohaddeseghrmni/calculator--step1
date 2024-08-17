@@ -6,7 +6,7 @@
 }
 body{
     
-    background-color: antiquewhite;
+    background-color:#e9e9e9;
 }
 .all-aitems{
 width: 100%;
@@ -26,7 +26,7 @@ grid-template-areas:
     display: flex;
     justify-content: flex-start;
     margin: 5px;
-    font-size: larger;
+    font-size: large;
 
 }
 .header-left{
@@ -51,12 +51,15 @@ grid-template-areas:
 
 }
 .times, .minus, .square {
-    display: inline-block;
+    display: flex;
     width: 30px;
     height: 30px;
   text-align: center;
   line-height: 20px;
   transition: background-color 0.3s, transform 0.3s;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
 }
 .size-6{
     width: 20px;
@@ -64,28 +67,40 @@ grid-template-areas:
     justify-content: flex-start;
     font-size: larger;
     position: absolute;
-    top: 40px;
+    top: 35px;
     left: 5px;
     font-size: xx-large;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: -7px;
+    box-sizing: content-box;
 }
 .size-6:hover{
-    background-color: aliceblue;
+    background-color: #D3D3D3;
+    border-radius: 3px;
+    cursor: pointer;
+    
 }
 .standard{
     grid-area: standard;
     display: flex;
-    margin-left: 35px;
-    font-size: small;
+    padding-left: 40px;
+    padding-top: 1px;
+    font-size:  xx-small;
+    
 }
 .size-7{
     width: 24px;
     height: 28px;
     margin-left: 10px;
+    margin-top: -4px;
 }
 .history{
 
     grid-area: history;
-    margin-top: 5px;
+    margin-top: 0px;
 
 }
 
@@ -103,7 +118,8 @@ grid-template-areas:
 
 .his-btn{
 
-    border-bottom: 3px solid rgb(228, 137, 19);
+    border-bottom: 3px solid rgb(228, 137, 19) ; 
+    padding-bottom: 5px;
 
 }
 
@@ -133,7 +149,7 @@ grid-template-areas:
     cursor: pointer;
     width: 8%;
     height: 45px;
-    width: max(50px,10%);
+    width: max(46px,6%);
 }
 
 .memory-1{
@@ -145,7 +161,7 @@ grid-template-areas:
     font-weight: 500;
     width: 8%;
     height: 45px;
-    width: max(50px,10%);
+    width: max(46px,6%);
     color: rgb(167, 174, 175);
 
 }
@@ -166,37 +182,44 @@ grid-template-areas:
     align-items: center;
     justify-content: center;
     min-width: 200px;
-    border-radius: 10px;
+   
    
 }
 .sighn {
     width: 100%;
-    height: 83px;
-    font-size: large;
-    background-color: #edafb8;
+    height: 100%;
+    font-size: small;
+    background-color: #DCDCDC;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     cursor: pointer;
     border: 1px solid;
+    border-radius: 3px;
+   
 }
 .number{
     width: 100%;
-    height: 83px;
-    font-size:x-large ;
-    background-color: #f7e1d7;
+    height: 100%;
+    font-size:large ;
+    font-weight: bold;
+    background-color: #fff;
     display: flex;
     align-items: center;
    justify-content: center;
    cursor: pointer;
    border: 1px solid;
+   font-weight: 800;
+   border-radius: 3px;
 }
+
+  
 .sighn:hover{
-    background-color: #dedbd2;
+    background-color: #D3D3D3;
 }
 .number:hover{
-    background-color: #dedbd2;
+    background-color: #F8F8FF;
 }
 .size-7{
     width: 23px;
