@@ -1,227 +1,237 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-body{
-    
-    background-color:#e9e9e9;
+body {
+  background-color: #e9e9e9;
 }
-.all-aitems{
-width: 100%;
-height: 100vh;
-display: grid;
-grid-template-columns: 4fr  1.25fr;
-grid-template-rows: 0.5fr 0.5fr  2fr  0.5fr  6fr;
-grid-template-areas: 
-"header-right header-left"
-"standard history"
-"calculator history"
-"memory-btn history"
-"keys history";
+.all-aitems {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 5fr 1.25fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr 6fr;
+  grid-template-areas:
+    "header-right header-left"
+    "standard history"
+    "calculator history"
+    "memory-btn history"
+    "keys history";
 }
-.header-right{
-    grid-area: header-right;
-    display: flex;
-    justify-content: flex-start;
-    margin: 5px;
-    font-size: large;
-
+.header-right {
+  grid-area: header-right;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px;
+  font-size: small;
+  font-family: "Segoe UI";
 }
-.header-left{
-    grid-area: header-left;
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-    font-size: larger;
+.header-left {
+  grid-area: header-left;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0px;
+  font-size: larger;
 }
-.times:hover{
-    background-color: red;
-   
+.times:hover {
+  background-color: red;
 }
-.minus:hover{
-    background-color: darkgray;
- 
-    
+.minus:hover {
+  background-color: darkgray;
 }
-.square:hover{
-    background-color: darkgray;
-    
-
+.square:hover {
+  background-color: darkgray;
 }
-.times, .minus, .square {
-    display: flex;
-    width: 30px;
-    height: 30px;
+.times,
+.minus,
+.square {
+  display: flex;
+  width: 30px;
+  height: 30px;
   text-align: center;
   line-height: 20px;
   transition: background-color 0.3s, transform 0.3s;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+  transition: all 0.5s ease-in-out;
 }
-.size-6{
-    width: 20px;
-    height: 20px;
-    justify-content: flex-start;
-    font-size: larger;
-    position: absolute;
-    top: 35px;
-    left: 5px;
-    font-size: xx-large;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-left: -7px;
-    box-sizing: content-box;
+.square {
+  padding-bottom: 4px;
 }
-.size-6:hover{
-    background-color: #D3D3D3;
-    border-radius: 3px;
-    cursor: pointer;
-    
+.size-6 {
+  width: 20px;
+  height: 20px;
+  justify-content: flex-start;
+  font-size: larger;
+  position: absolute;
+  top: 36px;
+  left: 5px;
+  font-size: xx-large;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: -7px;
+  box-sizing: content-box;
+  transition: all 0.5s ease-in-out;
 }
-.standard{
-    grid-area: standard;
-    display: flex;
-    padding-left: 40px;
-    padding-top: 1px;
-    font-size:  xx-small;
-    
+.size-6:hover {
+  background-color: #d3d3d3;
+  border-radius: 3px;
+  cursor: pointer;
 }
-.size-7{
-    width: 24px;
-    height: 28px;
-    margin-left: 10px;
-    margin-top: -4px;
+.standard {
+  grid-area: standard;
+  display: flex;
+  padding-left: 40px;
+  padding-top: 1px;
+  font-size: large;
+  font-weight: 500;
+  font-family: "Segoe UI";
 }
-.history{
-
-    grid-area: history;
-    margin-top: 0px;
-
+.size-7 {
+  width: 24px;
+  height: 28px;
+  margin-left: 10px;
+  margin-top: -4px;
 }
-
-.left-text{
-    
-    display: flex;
-    gap: 15px;
-}
-.his-btn:hover{
-    color: gray;
-}
-.mem-btn:hover{
-    color: gray;
+.history {
+  grid-area: history;
+  margin-top: 0px;
+  margin-left: 10px;
 }
 
-.his-btn{
-
-    border-bottom: 3px solid rgb(228, 137, 19) ; 
-    padding-bottom: 5px;
-
+.left-text {
+  display: flex;
+  gap: 15px;
+}
+.his-btn:hover {
+  color: gray;
+}
+.mem-btn:hover {
+  color: gray;
 }
 
-  
-
-.calculator{
-    grid-area: calculator;
-    display: flex;
-    justify-content: flex-end;
-    font-size: xx-large;
-    align-items: flex-end;
-}
-.memory-btn{
-
-    display: flex;
-    
+.his-btn {
+  border-bottom: 3px solid rgb(228, 137, 19);
+  padding-bottom: 5px;
 }
 
-.memory{
-
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    border-radius: 3px;
-    cursor: pointer;
-    width: 8%;
-    height: 45px;
-    width: max(46px,6%);
+.calculator {
+  grid-area: calculator;
+  display: flex;
+  justify-content: flex-end;
+  font-size: xx-large;
+  align-items: flex-end;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.memory-btn {
+  display: flex;
+  padding-bottom: 45px;
+  font-family: var(--font-family);
+  font-weight: 600;
 }
 
-.memory-1{
-      
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    width: 8%;
-    height: 45px;
-    width: max(46px,6%);
-    color: rgb(167, 174, 175);
-
+.memory {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 8%;
+  height: 45px;
+  width: max(46px, 6%);
+  padding: 10px;
+  font-weight: bolder;
+  font-style: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.5s ease-in-out;
 }
 
-.memory:hover{
-
-    background-color:#D3D3D3; 
-    
+.memory-1 {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 8%;
+  height: 45px;
+  width: max(46px, 6%);
+  color: rgb(167, 174, 175);
+  padding: 10px;
+  font-weight: bolder;
+  font-style: normal;
+  font-family: var(--font-family);
 }
 
+.memory:hover {
+  background-color: #d3d3d3;
+}
 
-
-.keys{
-    grid-area: keys;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(5,1fr);
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
-   
-   
+.keys {
+  grid-area: keys;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  gap: 2px;
 }
 .sighn {
-    width: 100%;
-    height: 100%;
-    font-size: small;
-    background-color: #DCDCDC;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
-    border: 1px solid;
-    border-radius: 3px;
-   
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dcdcdc;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
-.number{
-    width: 100%;
-    height: 100%;
-    font-size:large ;
-    font-weight: bold;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-   justify-content: center;
-   cursor: pointer;
-   border: 1px solid;
-   font-weight: 800;
-   border-radius: 3px;
+.sighn sup {
+  font-size: small;
+  align-self: flex-start;
+  margin-top: 26px;
+}
+.number1 {
+  margin-bottom: 7px;
+  margin-right: -2px;
+  font-size: x-small;
+}
+.sighn-b {
+  margin-bottom: 11px;
+  margin-right: px;
+}
+.number {
+  width: 100%;
+  height: 100%;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.5s ease-in-out;
 }
 
-  
-.sighn:hover{
-    background-color: #D3D3D3;
+.sighn:hover {
+  background-color: #d3d3d3;
 }
-.number:hover{
-    background-color: #F8F8FF;
+.number:hover {
+  background-color: #f8f8ff;
 }
-.size-7{
-    width: 23px;
-    height: 30px;
+.size-7 {
+  width: 23px;
+  height: 30px;
 }
