@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 body {
-  background-color: #e9e9e9;
+  background-color: #F3F3F3;;
 }
 .all-aitems {
   width: 100%;
@@ -44,15 +44,24 @@ body {
 .square:hover {
   background-color: darkgray;
 }
+.times:active{
+  background-color: darkred;
+}
+.minus:active{
+  background-color: dimgrey;
+}
+.square:active{
+  background-color: dimgrey;
+}
 .times,
 .minus,
 .square {
   display: flex;
-  width: 30px;
+  width: 40px;
   height: 30px;
   text-align: center;
   line-height: 20px;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.2s, transform 0.3s;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
@@ -83,6 +92,9 @@ body {
   border-radius: 3px;
   cursor: pointer;
 }
+.size-6:active{
+  background-color: dimgray;
+}
 .standard {
   grid-area: standard;
   display: flex;
@@ -102,6 +114,7 @@ body {
   grid-area: history;
   margin-top: 0px;
   margin-left: 10px;
+  font-family:  Segoe UI;
 }
 
 .left-text {
@@ -131,7 +144,7 @@ body {
 .memory-btn {
   display: flex;
   padding-bottom: 45px;
-  font-family: var(--font-family);
+  font-family:  Segoe UI;
   font-weight: 600;
 }
 
@@ -145,9 +158,9 @@ body {
   cursor: pointer;
   width: 8%;
   height: 45px;
-  width: max(46px, 6%);
+  width: max(48px, 6%);
   padding: 10px;
-  font-weight: bolder;
+  font-weight: 600;
   font-style: normal;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: all 0.5s ease-in-out;
@@ -172,6 +185,9 @@ body {
 .memory:hover {
   background-color: #d3d3d3;
 }
+.memory:active{
+  background-color: gray;
+}
 
 .keys {
   grid-area: keys;
@@ -188,13 +204,13 @@ body {
   height: 100%;
   font-size: large;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #dcdcdc;
+  background-color: #E0E0E0;;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .sighn sup {
   font-size: small;
@@ -214,8 +230,8 @@ body {
   width: 100%;
   height: 100%;
   font-size: x-large;
-  font-weight: bold;
-  background-color: #fff;
+  font-weight: 600;
+  background-color: #F0F0F0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,8 +244,14 @@ body {
 .sighn:hover {
   background-color: #d3d3d3;
 }
+.sighn:active{
+  background-color: darkgray;
+}
 .number:hover {
-  background-color: #f8f8ff;
+  background-color:#d3d3d3;
+}
+.number:active{
+  background-color:darkgray;
 }
 .size-7 {
   width: 23px;
