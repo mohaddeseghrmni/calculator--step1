@@ -5,13 +5,13 @@
   overflow: hidden;
 }
 body {
-  background-color: #F3F3F3;;
+  background-color: #d1cfcf;;
 }
 .all-aitems {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 5fr 1.25fr;
+  grid-template-columns: 5fr minmax(250px , 1.25fr);
   grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr 6fr;
   grid-template-areas:
     "header-right header-left"
@@ -65,7 +65,7 @@ body {
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .square {
   padding-bottom: 4px;
@@ -76,19 +76,19 @@ body {
   justify-content: flex-start;
   font-size: larger;
   position: absolute;
-  top: 36px;
+  top: 32px;
   left: 5px;
   font-size: xx-large;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   margin-left: -7px;
   box-sizing: content-box;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .size-6:hover {
-  background-color: #d3d3d3;
+  background-color: #c9c5c5;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -115,22 +115,27 @@ body {
   margin-top: 0px;
   margin-left: 10px;
   font-family:  Segoe UI;
-}
-
+  }
 .left-text {
   display: flex;
   gap: 15px;
+  cursor: pointer;
 }
+
 .his-btn:hover {
   color: gray;
+  transition: all ease 0.2s;
 }
 .mem-btn:hover {
   color: gray;
+  transition: all ease 0.2s;
 }
 
 .his-btn {
   border-bottom: 3px solid rgb(228, 137, 19);
   padding-bottom: 5px;
+  
+
 }
 
 .calculator {
@@ -143,9 +148,10 @@ body {
 }
 .memory-btn {
   display: flex;
-  padding-bottom: 45px;
+  padding-bottom: 48px;
   font-family:  Segoe UI;
   font-weight: 600;
+  width: max(100%, 6%);
 }
 
 .memory {
@@ -158,12 +164,11 @@ body {
   cursor: pointer;
   width: 8%;
   height: 45px;
-  width: max(48px, 6%);
   padding: 10px;
   font-weight: 600;
   font-style: normal;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .memory-1 {
@@ -174,7 +179,6 @@ body {
   text-align: center;
   width: 8%;
   height: 45px;
-  width: max(46px, 6%);
   color: rgb(167, 174, 175);
   padding: 10px;
   font-weight: bolder;
@@ -183,7 +187,7 @@ body {
 }
 
 .memory:hover {
-  background-color: #d3d3d3;
+  background-color: #c9c5c5;
 }
 .memory:active{
   background-color: gray;
@@ -202,7 +206,7 @@ body {
 .sighn {
   width: 100%;
   height: 100%;
-  font-size: large;
+  font-weight: 600;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #E0E0E0;;
   display: flex;
@@ -236,9 +240,9 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-weight: 800;
+  font-weight: 600;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .sighn:hover {
