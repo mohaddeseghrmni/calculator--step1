@@ -37,21 +37,24 @@ body {
 }
 .times:hover {
   background-color: red;
+  cursor: pointer;
 }
 .minus:hover {
   background-color: darkgray;
+  cursor: pointer;
 }
 .square:hover {
   background-color: darkgray;
+  cursor: pointer;
 }
 .times:active {
   background-color: darkred;
 }
 .minus:active {
-  background-color: dimgrey;
+  background-color: rgb(160, 157, 157);
 }
 .square:active {
-  background-color: dimgrey;
+  background-color: rgb(160, 157, 157);
 }
 .times,
 .minus,
@@ -76,7 +79,7 @@ body {
   justify-content: flex-start;
   font-size: larger;
   position: absolute;
-  top: 36px;
+  top: 34px;
   left: 5px;
   font-size: xx-large;
   padding-right: 10px;
@@ -93,7 +96,7 @@ body {
   cursor: pointer;
 }
 .size-6:active {
-  background-color: dimgray;
+  background-color: rgb(180, 177, 177);
 }
 .standard {
   grid-area: standard;
@@ -180,9 +183,9 @@ body {
   text-align: center;
   width: 8%;
   height: 45px;
-  color: rgb(167, 174, 175);
+  color: rgb(135, 145, 145);
   padding: 10px;
-  font-weight: bolder;
+  font-weight: 600;
   font-style: normal;
   font-family: var(--font-family);
   width: 45%;
@@ -192,7 +195,7 @@ body {
   background-color: #c9c5c5;
 }
 .memory:active {
-  background-color: gray;
+  background-color:rgb(177, 174, 174);
 }
 
 .keys {
@@ -251,13 +254,13 @@ body {
   background-color: #d3d3d3;
 }
 .sighn:active {
-  background-color: darkgray;
+  background-color: rgb(202, 199, 199);
 }
 .number:hover {
   background-color: #d3d3d3;
 }
 .number:active {
-  background-color: darkgray;
+  background-color: rgb(202, 199, 199);
 }
 .size-7 {
   width: 23px;
