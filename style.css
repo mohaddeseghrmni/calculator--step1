@@ -119,13 +119,14 @@ body {
   margin-left: 10px;
   margin-top: -4px;
 }
+
 .history {
   grid-area: history;
   margin-top: 0px;
   margin-left: 10px;
   font-family: Segoe UI;
-  min-width: 169px;
-  width: 30%;
+  min-width: 200px;
+  
 }
 
 .left-text {
@@ -488,30 +489,37 @@ body {
    .num25{
     grid-area: num25;
    }
-   
+  }
+  
+  @media (min-width: 740px) {
+    .all-aitems {
+      grid-template-columns: 5fr minmax(300px, 1.5fr);
+    }
+    .history {
+      width: 200px;
+    }
+  }
+  @media (max-width: 740px) and (min-width: 559px) {
+    .all-aitems {
+      grid-template-columns: 55% 45%;
+    }
+    .history {
+      width: 30%;
+    }
+  }
+  @media (max-width: 559px) {
+    .all-aitems {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "standard"
+        "calculator"
+        "memory-btn"
+        "keys";
+    }
+    .history {
+      display: none;
+    }
+  }
 
-}
-@media (max-width:660px) {
-  .history{
-    width: 40%;
-    min-width: 169px;
-    margin-left: 20px;
-  }
-}
-@media(max-width:600px){
-  .history{
-    width: 50%;
-    min-width: 169px;
-    margin-left: 0px;
-    
-   
-  }
-}
-@media(max-width:580px){
-  .history{
-    width: 60%;
-    min-width: 169;
-   
-    
-  }
-}
+
