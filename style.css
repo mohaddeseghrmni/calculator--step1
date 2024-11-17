@@ -151,11 +151,10 @@ body {
 }
 .memory-btn {
   display: flex;
-  padding-bottom: 48px;
   font-family: Segoe UI;
   font-weight: 600;
-  max-width: 310px;
-  margin-bottom: -46px;
+  max-width: 410px;
+  
 }
 
 .memory {
@@ -267,7 +266,6 @@ body {
 }
 @media (max-width: 1024px) {
   .keys {
-    font-weight: 900;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -381,7 +379,7 @@ body {
   }
   .memory-btn {
     grid-area: memory-btn;
-    font-weight: 800;
+   
   }
   .keys {
     grid-area: keys;
@@ -500,15 +498,6 @@ body {
   }
 }
 @media (max-width: 550px) {
-  .all-aitems {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "standard"
-      "calculator"
-      "memory-btn"
-      "keys";
-  }
   .history {
     display: none;
   }
